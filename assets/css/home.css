@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #091833;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+
+.text-animation span {
+  position: relative;
+}
+.text-animation span::before {
+  content: "web dev";
+  color: #cb0c59;
+  animation: words 20s infinite;
+}
+.text-animation span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 110%;
+  border-left: 3px solid #091833;
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+  background-color: #091833;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 5px solid white;
+  }
+}
+@keyframes words {
+  0%, 30% {
+    content: "Web Developer";
+  }
+  31%, 60% {
+    content: "Front End Dev";
+  }
+  61%, 100% {
+    content: "Back End Dev";
+  }
+}
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 8px);
+  }
+}
+/* hr animation */
+.hr-animation {
+  border: 0;
+  height: 2px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.hr-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 10px;
+  background: #cb0c59;
+  transform: translateX(0%);
+  animation: expand 3s ease-out forwards;
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+/*********about***********/
+.card {
+  max-height: 600px;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 14em;
+  height: 190%;
+  background: linear-gradient(#00ccff, #cb0c59);
+  animation: rotate 4s linear infinite;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  background-color: #0e1538;
+  inset: 5px;
+  border-radius: 16px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* image animation */
+.animate-up-down {
+  animation: upDown 3s ease-in-out infinite;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+    /* Moves the image up */
+  }
+  100% {
+    transform: translateY(0);
+    /* Returns the image to the original position */
+  }
+}
+/*********skills***************/
+.skill {
+  display: flex;
+  margin: 15px 0;
+}
+.skill .skill__name {
+  color: white;
+  background-color: rgb(8, 51, 68);
+  padding: 15px;
+  width: 250px;
+}
+.skill .skill__bar {
+  color: white;
+  background-color: #711c91;
+  width: 100%;
+}
+.skill .skill__percent {
+  float: right;
+  padding: 15px 5px 0 0;
+}
+.skill .skill__html {
+  width: 0%;
+  background-color: #00ccff;
+  animation: skill-level-html 1s linear forwards;
+  height: 100%;
+}
+.skill .skill__css {
+  width: 0%;
+  background-color: #00ccff;
+  animation: skill-level-css 1s linear forwards;
+  height: 100%;
+}
+.skill .skill__js {
+  width: 0%;
+  background-color: #00ccff;
+  animation: skill-level-js 1s linear forwards;
+  height: 100%;
+}
+.skill .skill__type {
+  width: 0%;
+  background-color: #00ccff;
+  animation: skill-level-type 1s linear forwards;
+  height: 100%;
+}
+.skill .skill__react {
+  width: 0%;
+  background-color: #00ccff;
+  animation: skill-level-react 1s linear forwards;
+  height: 100%;
+}
+.skill .skill__node {
+  width: 0%;
+  background-color: #00ccff;
+  animation: skill-level-node 1s linear forwards;
+  height: 100%;
+}
+
+@keyframes skill-level-html {
+  100% {
+    width: 85%;
+  }
+}
+@keyframes skill-level-css {
+  100% {
+    width: 80%;
+  }
+}
+@keyframes skill-level-js {
+  100% {
+    width: 75%;
+  }
+}
+@keyframes skill-level-type {
+  100% {
+    width: 60%;
+  }
+}
+@keyframes skill-level-react {
+  100% {
+    width: 75%;
+  }
+}
+@keyframes skill-level-node {
+  100% {
+    width: 65%;
+  }
+}
+/********projects**********/
+.project {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.project .project__preview {
+  display: flex;
+  position: relative;
+  top: 5%;
+}
+.project .project__preview:hover .project__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e1538;
+  animation: appear 0.5s;
+  border-radius: 5%;
+}
+.project .project__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+.project .project__text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.438);
+  display: none;
+  border-top: #cb0c59 solid 3px;
+}
+.project .project__box {
+  background-color: #0e1538;
+  text-align: start;
+  padding: 0 20px;
+  border-radius: 3%;
+}
+.project .project__title {
+  font-size: 25px;
+  padding: 15px 0;
+  font-weight: 800;
+  border-bottom: white 3px solid;
+  -o-border-image: linear-gradient(to right, #00ccff 30%, transparent 50%) 100% 1;
+     border-image: linear-gradient(to right, #00ccff 30%, transparent 50%) 100% 1;
+}
+.project .project__language {
+  background-color: #083344;
+  padding: 10px;
+  border-radius: 15%;
+  margin: 10px 2px;
+}
+.project .project__link {
+  text-align: end;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .nav .nav__link {
+    position: relative;
+  }
+  .nav .nav__link:hover {
+    color: #00ccff;
+  }
+  .nav .nav__link::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #00ccff;
+    transition: all 0.5s;
+  }
+  .nav .nav__link:hover::before {
+    width: 100%;
+  }
+}/*# sourceMappingURL=home.css.map */

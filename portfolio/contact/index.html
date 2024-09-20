@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../../assets/css/contact.css" />
+    <link rel="stylesheet" href="../../assets/css/output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="icon" href="../../assets/img/favicon-img.ico" type="image/x-icon" />
+
+  </head>
+
+  <body>
+    <section
+      class="min-h-screen max-w-[650px] mx-auto flex flex-col justify-center items-center"
+    >
+      <h2 class="text-center py-6 text-[30px]">Contact <span class="text-[#00ccff]">me</span></h2>
+      <form class="form" action="#">
+        <div class="form_box ">
+          <label for="fname">Full Name</label>
+          <input
+            class="form__input"
+            type="text"
+            id="fname"
+            name="fname"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            class="form__input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="form_box">
+          <label for="number">Number</label>
+          <input class="form__input" type="number" id="number" name="number" />
+          <label for="Subject">Subject</label>
+          <input class="form__input" type="text" id="subject" name="subject" />
+        </div>
+
+        <textarea
+          class="form__textarea"
+          name=""
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <button
+          type="button"
+          class="button-21 px-12">
+          Invia
+        </button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,339 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Cantoral</title>
+
+  <link rel="icon" href="./assets/img/favicon-img.ico" type="image/x-icon" />
+
+
+  <link rel="stylesheet" href="./assets/css/home.css" />
+  <link rel="stylesheet" href="./assets/css/output.css" />
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+
+  <meta property="og:title" content="Paul Cantoral Portfolio Website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://paulwebdevpe.github.io/Portfolio" />
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav bg-gradient-to-r from-cyan-950 to-blue-900 dark:bg-gray-900 fixed w-full z-30 top-0 start-0   ">
+    <div class="w-full flex flex-wrap items-center justify-between  p-4 max-w-[1200px] mx-auto ">
+      <a href="" class="flex items-center space-x-3 rtl:space-x-reverse ">
+
+        <span class="self-center text-gray-100 text-2xl font-semibold whitespace-nowrap dark:text-black"
+          alt="logo website">Paul.</span>
+      </a>
+      <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse lg:w-full">
+
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100  rounded-lg   lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 " id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 lg:p-0 mt-3 lg:mt-0 font-medium border border-[#cb0c59] rounded-lg  lg:space-x-8 rtl:space-x-reverse lg:flex-row  lg:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="nav__link block py-2 px-3 lg:pb-0 text-gray-100  hover:bg-[#cb0c59]  md:hover:bg-[#cb0c59] lg:hover:bg-transparent    md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#about"
+              class="nav__link block py-2 px-3 lg:pb-0 text-gray-100  lg:hover:bg-transparent hover:bg-[#cb0c59] md:hover:bg-[#cb0c59]  md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              About</a>
+          </li>
+          <li>
+            <a href="#skills"
+              class="nav__link block py-2 px-3 lg:pb-0 text-gray-100  lg:hover:bg-transparent hover:bg-[#cb0c59] md:hover:bg-[#cb0c59]  md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio-page"
+              class="nav__link block py-2 px-3 lg:pb-0 text-gray-100  rounded  lg:hover:bg-transparent hover:bg-[#cb0c59] md:hover:bg-[#cb0c59]  md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              Projects</a>
+          </li>
+          <li>
+            <a href="portfolio/contact"
+              class="nav__link block py-2 px-3 lg:pb-0 text-gray-100  rounded  lg:hover:bg-transparent  hover:bg-[#cb0c59] md:hover:bg-[#cb0c59] md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              Contact</a>
+          </li>
+          <li>
+            <a href="portfolio/cv"
+              class="nav__link block py-2 px-3   text-gray-100 rounded lg:border lg:border-[#00ccff] hover:bg-[#cb0c59] md:hover:bg-[#cb0c59] lg:hover:bg-transparent   md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HOME PAGE -->
+
+  <section class=" min-h-screen flex flex-col items-center justify-center text-center max-w-[1200px] mx-auto ">
+
+    <div class="w-full px-10 lg:max-w-[600px]">
+      <span class="text-[16px] text-[#cb0c59]">Hi, my name is</span>
+      <h1 class="text-[40px] animate-jump-in">Paul Cantoral.</h1>
+      <h1 class="text-[40px]">I like to code.</h1>
+
+      <hr class="hr-animation" />
+    </div>
+    <div>
+      <h1 class="text-[40px]">I'm a</h1>
+      <h2 class="text-animation text-[40px]"><span></span></h2>
+    </div>
+    <footer class="absolute w-full text-[40px] bottom-[10%] flex justify-center items-center px-3">
+      <hr class="flex-grow border-t-2 hr-animation" />
+
+      <div class="">
+        <a href="https://www.instagram.com/paul_000077/" target="_blank">
+          <i class="bx bxl-instagram hover:text-[#cb0c59] duration-300 hover:scale-125 pl-3" alt="instagram icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/paul-undefined-584599292/" target="_blank">
+          <i class="bx bxl-linkedin hover:text-[#cb0c59] duration-300 hover:scale-125" alt="linkedin icon"></i>
+        </a>
+        <a href="https://github.com/paulwebdevpe" target="_blank" class="">
+          <i class="bx bxl-github hover:text-[#cb0c59] duration-300 hover:scale-125 pr-3" alt="github icon"></i>
+        </a>
+      </div>
+
+      <hr class="flex-grow border-t-2 hr-animation" />
+    </footer>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="px-3 lg:px-0 min-h-screen bg-cyan-950  md:pt-0 " id="about">
+    <div
+      class="  flex flex-col lg:flex-row  items-center justify-center h-full text-center max-w-[1200px] mx-auto  md:flex-row">
+      <div class="card py-12 flex flex-col md:w-[50%]">
+        <span class="text-[40px] pb-6 underline text-[#00ccff] z-20 px-3">About Me</span>
+        <p class="z-10 text-[16px]  px-4 md:text-start lg:text-[18px]">
+          Ciao, sono <span class="text-[#00ccff] font-bold">Paul</span>, un aspirante <span
+            class="text-[#00ccff] font-bold">Full Stack Developer</span> con una grande
+          passione per il mondo dello sviluppo web. Sto iniziando il mio
+          percorso di apprendimento sia nel front-end che nel back-end, e mi
+          sto concentrando sull'acquisizione di competenze in tecnologie come
+          <span class="text-[#00ccff]">HTML</span>, <span class="text-[#00ccff]">CSS</span>, <span
+            class="text-[#00ccff]">JavaScript</span>, <span class="text-[#00ccff]">Typescript</span>, <span
+            class="text-[#00ccff]">React</span>,
+          e <span class="text-[#00ccff]">Node.js</span>. Sono motivato a migliorare continuamente e sono
+          entusiasta di applicare ciò che imparo in progetti pratici. Sono
+          sempre alla ricerca di nuove sfide che mi permettano di crescere
+          come sviluppatore.
+        </p>
+      </div>
+
+      <div class="py-9 px-12 md:w-[50%]">
+        <img class="rounded-full shadow-2xl shadow-[#cb0c59] animate-up-down mx-auto max-h-[400px]  "
+          src="../assets/img/dev-web.webp" alt="immagine about me" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+
+  <section class=" px-3 lg:px-0 min-h-screen  text-center  max-w-[1200px] mx-auto" id="skills">
+    <div class="lg:flex flex-col items-center justify-center min-h-screen">
+      <h2 class="text-[#00ccff] text-[40px] underline lg:pb-28 py-12 ">Skills</h2>
+
+      <div class="flex flex-col lg:flex-row lg:items-center lg:w-full ">
+
+        <div class="lg:w-1/2 w-full pb-9 px-12">
+          <img class="mx-auto  rounded-full animate-rotate max-h-[400px]" src="../assets/img/skill.webp"
+            alt="immagine di skills di programmazione">
+        </div>
+
+
+        <div class="lg:w-1/2 w-full lg:py-9 lg:px-12 ">
+          <div class="skill ">
+            <div class="skill__name">HTML5</div>
+            <div class="skill__bar">
+              <span class="skill__percent">85%</span>
+              <div class="skill__html"></div>
+            </div>
+          </div>
+          <div class="skill ">
+            <div class="skill__name">CSS</div>
+            <div class="skill__bar">
+              <span class="skill__percent">80%</span>
+              <div class="skill__css"></div>
+            </div>
+          </div>
+          <div class="skill ">
+            <div class="skill__name">JS</div>
+            <div class="skill__bar">
+              <span class="skill__percent">75%</span>
+              <div class="skill__js"></div>
+            </div>
+          </div>
+          <div class="skill ">
+            <div class="skill__name">TYPESCRIPT</div>
+            <div class="skill__bar">
+              <span class="skill__percent">60%</span>
+              <div class="skill__type"></div>
+            </div>
+          </div>
+          <div class="skill ">
+            <div class="skill__name">REACT</div>
+            <div class="skill__bar">
+              <span class="skill__percent">75%</span>
+              <div class="skill__react"></div>
+            </div>
+          </div>
+          <div class="skill ">
+            <div class="skill__name">NODE.js</div>
+            <div class="skill__bar">
+              <span class="skill__percent">65%</span>
+              <div class="skill__node"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- PORTFOLIO -->
+
+  <section id="portfolio-page" class="bg-cyan-950 text-center px-3 lg:px-0 min-h-screen pb-6 animate-fade-down">
+    <div class="max-w-[1200px] mx-auto flex flex-col lg:justify-center lg:items-center min-h-screen lg:py-9 lg:px-12">
+      <h3 class="text-[#00ccff] text-[40px]  py-12 underline ">Projects</h3>
+      <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="project ">
+          <div class=" project__preview">
+            <img class="project__img " src="../assets/img/port-1.jpg" alt="immagine progetto uno" />
+            <div class="project__text"><a class="bg-cyan-900 text-white p-6" href="#">Project 1</a></div>
+          </div>
+
+          <div class="px-3 relative ">
+            
+            <div class="project__box ">
+              <div class="">
+                <h2 class="project__title ">Titolo</h2>
+              </div>
+              <div class="py-6">
+                <span class="project__language text-red-700 ">react</span>
+                <span class="project__language text-orange-400">javasscript</span>
+                <span class="project__language text-yellow-400">tailwind</span>
+                <span class="project__language text-emerald-400 inline-block">node.js</span>
+              </div>
+              <div class="project__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, adipisci.</p>
+              </div>
+              <div class="project__link ">
+                <a href=""><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project ">
+          <div class=" project__preview">
+            <img class="project__img " src="../assets/img/port-2.jpg" alt="immagine progetto due" />
+            <div class="project__text"><a class="bg-cyan-900 text-white p-6" href="#">Project 1</a></div>
+          </div>
+
+          <div class="px-3 relative">
+            <div class="project__box">
+              <div class="">
+                <h2 class="project__title ">Titolo</h2>
+              </div>
+              <div class="py-6">
+                <span class="project__language text-red-700 ">react</span>
+                <span class="project__language text-orange-400">javasscript</span>
+                <span class="project__language text-yellow-400">tailwind</span>
+                <span class="project__language text-emerald-400 inline-block">node.js</span>
+              </div>
+              <div class="project__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, adipisci.</p>
+              </div>
+              <div class="project__link ">
+                <a href=""><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="project ">
+          <div class=" project__preview">
+            <img class="project__img " src="../assets/img/port-3.jpg" alt="immagine progetto tre" />
+            <div class="project__text"><a class="bg-cyan-900 text-white p-6" href="#">Project 1</a></div>
+          </div>
+
+          <div class="px-3 relative">
+            <div class="project__box">
+              <div class="">
+                <h2 class="project__title ">Titolo</h2>
+              </div>
+              <div class="py-6">
+                <span class="project__language text-red-700 ">react</span>
+                <span class="project__language text-orange-400">javasscript</span>
+                <span class="project__language text-yellow-400">tailwind</span>
+                <span class="project__language text-emerald-400 inline-block">node.js</span>
+              </div>
+              <div class="project__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, adipisci.</p>
+              </div>
+              <div class="project__link ">
+                <a href=""><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project lg:col-start-2">
+          <div class=" project__preview">
+            <img class="project__img " src="../assets/img/port-4.jpg" alt="immagine progetto quattro" />
+            <div class="project__text"><a class="bg-cyan-900 text-white p-6" href="#">Project 1</a></div>
+          </div>
+
+          <div class="px-3 relative">
+            <div class="project__box lg:col-start-2">
+              <div class="">
+                <h2 class="project__title ">Titolo</h2>
+              </div>
+              <div class="py-6">
+                <span class="project__language text-red-700 ">react</span>
+                <span class="project__language text-orange-400">javasscript</span>
+                <span class="project__language text-yellow-400">tailwind</span>
+                <span class="project__language text-emerald-400 inline-block">node.js</span>
+              </div>
+              <div class="project__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, adipisci.</p>
+              </div>
+              <div class="project__link ">
+                <a href=""><i class='bx bx-link-external'></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
