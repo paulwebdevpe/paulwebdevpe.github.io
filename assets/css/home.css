@@ -135,11 +135,9 @@ body {
   }
   50% {
     transform: translateY(-20px);
-    /* Moves the image up */
   }
   100% {
     transform: translateY(0);
-    /* Returns the image to the original position */
   }
 }
 /*********skills***************/
@@ -280,6 +278,9 @@ body {
   padding: 10px;
   border-radius: 15%;
   margin: 10px 2px;
+}
+.project .project__description {
+  font-size: 14px;
 }
 .project .project__link {
   text-align: end;
