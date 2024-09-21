@@ -3,6 +3,8 @@ module.exports = {
   content: ["../portfolio/**/*.{html,js}","./index.html",  "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
+      
+
       keyframes: {
         rotate: {
           "0%": { transform: "rotate(0deg)" },
